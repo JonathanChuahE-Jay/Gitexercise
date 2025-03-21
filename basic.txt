@@ -1,0 +1,39 @@
+a. basic 
+1. git init(project file)
+2. git add .
+3. git commit -m "Initial commit"
+4. git remote add origin https://github.com/JonathanChuahE-Jay/Research_grant_management_system.git  (eg change url|| create repository first)
+5. git remote -v
+(see smtg like this: 
+origin  https://github.com/JonathanChuahE-Jay/Research_grant_management_system.git (fetch)
+origin  https://github.com/JonathanChuahE-Jay/Research_grant_management_system.git (push)
+)
+6. git push -u origin master
+
+b. add tag on existing pushed project
+1. git tag -a v1.0 -m "Initial release version 1.0" 
+2. git push origin v1.0
+
+c. after changing bugs ( new vcs )
+1. git add .
+2. git commit -m "Fix bug in GrantController"
+3. git tag -a v1.1 -m "Fix bug in GrantController"
+4. git push origin v1.1
+
+
+git log - verify commited
+
+git tag - verify tag
+
+git push --tags     - push all tags
+
+git tag -d v1.0     - delete old tag
+
+git tag -a v1.1 -m "Updated release version"    - create new tag
+
+git push origin --delete <old_tag_name>     - delete old tag remotely
+
+git push origin v1.1  - push tag
+
+
+
